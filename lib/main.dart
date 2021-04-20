@@ -28,6 +28,7 @@ class _RandomWordsState extends State<RandomWords> {
     return ListView.builder(
       padding: const EdgeInsets.all(16),
       itemBuilder: (context, item) {
+        // 偶数行なら区切り線を作成、 奇数行なら、_buildRowメソッドを実行
         if (item.isOdd) return Divider();
 
         final index = item ~/ 2;
