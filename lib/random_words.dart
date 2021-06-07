@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:fluttercrashcourse/page/navigator_page.dart';
 
 class RandomWords extends StatefulWidget {
   @override
@@ -104,9 +105,14 @@ class _RandomWordsState extends State<RandomWords> {
               ),
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('画面遷移'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => NavigatorPage(),
+                  )
+                );
               },
             ),
             ListTile(
