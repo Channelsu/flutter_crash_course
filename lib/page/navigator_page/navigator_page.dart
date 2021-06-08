@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercrashcourse/page/navigator_page/next_page1.dart';
 import 'package:fluttercrashcourse/page/navigator_page/next_page2.dart';
+import 'package:fluttercrashcourse/page/navigator_page/next_page3.dart';
 
 class NavigatorPage extends StatelessWidget {
   @override
@@ -37,23 +38,24 @@ class NavigatorPage extends StatelessWidget {
             ElevatedButton(
               child: Text('画面遷移３'),
               onPressed: () {
-                
+                // 下から次のページが出てくる
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    fullscreenDialog: true,
+                    builder: (context) => NextPage3(),
+                  ),
+                );
               },
             ),
             ElevatedButton(
-              child: Text('画面遷移３'),
+              child: Text('画面遷移４'),
               onPressed: () {
                 
               },
             ),
             ElevatedButton(
-              child: Text('画面遷移３'),
-              onPressed: () {
-                
-              },
-            ),
-            ElevatedButton(
-              child: Text('画面遷移３'),
+              child: Text('画面遷移５'),
               onPressed: () {
                 
               },
