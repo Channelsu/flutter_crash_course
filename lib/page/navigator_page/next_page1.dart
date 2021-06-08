@@ -8,7 +8,19 @@ class NextPage1 extends StatelessWidget {
         title: Text('次ページ1'),
       ),
       body: Center(
-        child: Text('次ページ1'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('次ページ1'),
+            TextButton(
+              child: Text('戻る'),
+              onPressed: () {
+                // 前のページに戻る
+                Navigator.pop(context);
+              },
+            )
+          ],
+        ),
       ),
     );
   }
