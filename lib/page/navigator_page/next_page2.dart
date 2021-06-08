@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class NextPage2 extends StatelessWidget {
 
-  String val;
+  final String val;
 
   NextPage2(this.val);
 
