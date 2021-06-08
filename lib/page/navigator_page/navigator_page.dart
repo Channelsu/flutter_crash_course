@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercrashcourse/page/navigator_page/next_page1.dart';
+import 'package:fluttercrashcourse/page/navigator_page/next_page2.dart';
 
 class NavigatorPage extends StatelessWidget {
   @override
@@ -15,6 +16,7 @@ class NavigatorPage extends StatelessWidget {
             ElevatedButton(
               child: Text('画面遷移１'),
               onPressed: () {
+                // 一番シンプルな画面遷移
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => NextPage1()),
@@ -23,6 +25,29 @@ class NavigatorPage extends StatelessWidget {
             ),
             ElevatedButton(
               child: Text('画面遷移２'),
+              onPressed: () {
+                // 値を渡す方法
+                Navigator.push(
+                  context,
+                  // 引数を渡し、次ページでフィールドとコンストラクタを定義する
+                  MaterialPageRoute(builder: (context) => NextPage2('渡したい値')),
+                );
+              },
+            ),
+            ElevatedButton(
+              child: Text('画面遷移３'),
+              onPressed: () {
+                
+              },
+            ),
+            ElevatedButton(
+              child: Text('画面遷移３'),
+              onPressed: () {
+                
+              },
+            ),
+            ElevatedButton(
+              child: Text('画面遷移３'),
               onPressed: () {
                 
               },
