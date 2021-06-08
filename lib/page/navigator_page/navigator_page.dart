@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttercrashcourse/page/navigator_page/next_page1.dart';
 
 class NavigatorPage extends StatelessWidget {
   @override
@@ -14,7 +15,10 @@ class NavigatorPage extends StatelessWidget {
             ElevatedButton(
               child: Text('画面遷移１'),
               onPressed: () {
-                
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NextPage1()),
+                );
               },
             ),
             ElevatedButton(
