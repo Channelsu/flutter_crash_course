@@ -60,6 +60,18 @@ class NavigatorPage extends StatelessWidget {
                 
               },
             ),
+            ElevatedButton(
+              child: Text('画面遷移６'),
+              onPressed: () {
+                
+              },
+            ),
+            ElevatedButton(
+              child: Text('画面遷移７'),
+              onPressed: () {
+                
+              },
+            ),
           ],
         ),
       ),
