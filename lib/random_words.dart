@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:fluttercrashcourse/page/media_query_page/media_query_page.dart';
 import 'package:fluttercrashcourse/page/navigator_page/navigator_page.dart';
 
 class RandomWords extends StatefulWidget {
@@ -116,9 +117,14 @@ class _RandomWordsState extends State<RandomWords> {
               },
             ),
             ListTile(
-              title: Text('Item 2'),
+              title: Text('MediaQuery'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MediaQueryPage(),
+                  )
+                );
               },
             ),
           ],
