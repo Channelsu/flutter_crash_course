@@ -12,7 +12,15 @@ class MediaQueryPage extends StatelessWidget {
         title: Text('メディアクエリ'),
       ),
       body: Center(
-        child: Text('このデバイスは横$screenWidth 縦$screenHeightです。'),
+        child: Column(
+          children: [
+            Text('このデバイスは横$screenWidth 縦$screenHeightです。'),
+            SizedBox(height: 20,),
+            screenWidth >= 1200 && screenHeight >= 720
+              ? Container(height: 100, width: 700, color: Colors.red,)
+              : Container(height: 100, width: 100, color: Colors.blue,)
+          ],
+        ),
       ),
     );
   }
