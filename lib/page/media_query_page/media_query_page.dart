@@ -6,6 +6,7 @@ class MediaQueryPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
     var screenHeight = MediaQuery.of(context).size.height;
+    var screenOrientation = MediaQuery.of(context).orientation;
 
     return Scaffold(
       appBar: AppBar(
@@ -18,7 +19,11 @@ class MediaQueryPage extends StatelessWidget {
             SizedBox(height: 20,),
             screenWidth >= 1200 && screenHeight >= 720
               ? Container(height: 100, width: 700, color: Colors.red,)
-              : Container(height: 100, width: 100, color: Colors.blue,)
+              : Container(height: 100, width: 100, color: Colors.blue,),
+            SizedBox(height: 20,),
+            screenOrientation == Orientation.portrait
+              ? Text('このデバイスは縦向きです。')
+              : Text('このデバイスは横向きです。')
           ],
         ),
       ),
