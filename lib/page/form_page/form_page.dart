@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
-class FormPage extends StatelessWidget {
+class FormPage extends StatefulWidget {
+  @override
+  _FormPageState createState() => _FormPageState();
+}
+
+class _FormPageState extends State<FormPage> {
+  bool value = false;
 
   @override
   Widget build(BuildContext context) {
@@ -8,13 +14,13 @@ class FormPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('フォーム'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('フォーム'),
-          ],
-        ),
+      body: ListView(
+        children: [
+          Checkbox(
+            value: value,
+            onChanged: (value) => setState(() => this.value = value),
+          ),
+        ],
       ),
     );
   }
