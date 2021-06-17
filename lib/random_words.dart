@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:fluttercrashcourse/page/form_page/form_page.dart';
 import 'package:fluttercrashcourse/page/media_query_page/media_query_page.dart';
 import 'package:fluttercrashcourse/page/navigator_page/navigator_page.dart';
 
@@ -123,6 +124,17 @@ class _RandomWordsState extends State<RandomWords> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => MediaQueryPage(),
+                  )
+                );
+              },
+            ),
+            ListTile(
+              title: Text('フォーム'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FormPage(),
                   )
                 );
               },
