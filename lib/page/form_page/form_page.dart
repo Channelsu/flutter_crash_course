@@ -17,6 +17,7 @@ class _FormPageState extends State<FormPage> {
       body: ListView(
         children: [
           Checkbox(
+            activeColor: Theme.of(context).primaryColor,
             value: value,
             onChanged: (value) => setState(() => this.value = value),
           ),
