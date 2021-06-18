@@ -8,7 +8,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primaryColor: Colors.purple[900]),
+      theme: ThemeData(
+        primaryColor: Colors.purple[900],
+        unselectedWidgetColor: Colors.purple[900],
+      ),
       home: RandomWords(),
     );
   }
