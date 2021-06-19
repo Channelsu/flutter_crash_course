@@ -7,6 +7,7 @@ class FormPage extends StatefulWidget {
 
 class _FormPageState extends State<FormPage> {
   bool value = false;
+  bool value2 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +21,12 @@ class _FormPageState extends State<FormPage> {
             activeColor: Theme.of(context).primaryColor,
             value: value,
             onChanged: (value) => setState(() => this.value = value),
+          ),
+          CheckboxListTile(
+            title: Text('タイトル', style: TextStyle(fontSize: 20),),
+            activeColor: Theme.of(context).primaryColor,
+            value: value2,
+            onChanged: (value) => setState(() => this.value2 = value),
           ),
         ],
       ),
