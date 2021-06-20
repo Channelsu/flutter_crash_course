@@ -23,6 +23,7 @@ class _FormPageState extends State<FormPage> {
             onChanged: (value) => setState(() => this.value = value),
           ),
           CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading, // チェックボックスの位置を先頭に
             title: Text('タイトル', style: TextStyle(fontSize: 20),),
             activeColor: Theme.of(context).primaryColor,
             value: value2,
