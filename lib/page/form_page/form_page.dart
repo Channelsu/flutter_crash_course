@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttercrashcourse/page/form_page/checkbox_state.dart';
 
 class FormPage extends StatefulWidget {
   @override
@@ -8,6 +9,12 @@ class FormPage extends StatefulWidget {
 class _FormPageState extends State<FormPage> {
   bool value = false;
   bool value2 = false;
+
+  final notifications = [
+    CheckboxState(title: '屋根'),
+    CheckboxState(title: 'バイク駐車場'),
+    CheckboxState(title: '喫煙所'),
+  ];
 
   @override
   Widget build(BuildContext context) {
