@@ -40,4 +40,12 @@ class _FormPageState extends State<FormPage> {
       ),
     );
   }
+
+  Widget buildSingleCheckbox() => CheckboxListTile(
+    controlAffinity: ListTileControlAffinity.leading, // チェックボックスの位置を先頭に
+    title: Text('タイトル', style: TextStyle(fontSize: 20),),
+    activeColor: Theme.of(context).primaryColor,
+    value: value2,
+    onChanged: (value) => setState(() => this.value2 = value),
+  );
 }
