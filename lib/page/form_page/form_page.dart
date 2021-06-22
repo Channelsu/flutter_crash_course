@@ -36,8 +36,10 @@ class _FormPageState extends State<FormPage> {
             value: value2,
             onChanged: (value) => setState(() => this.value2 = value),
           ),
-          SizedBox(height: 20,),
+          SizedBox(height: 50,),
           ...notifications.map(buildSingleCheckbox).toList(),
+          SizedBox(height: 50,),
+          Divider(color: Colors.purple,)
         ],
       ),
     );
