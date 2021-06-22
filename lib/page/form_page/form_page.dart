@@ -36,16 +36,18 @@ class _FormPageState extends State<FormPage> {
             value: value2,
             onChanged: (value) => setState(() => this.value2 = value),
           ),
+          SizedBox(height: 20,),
+          ...notifications.map(buildSingleCheckbox).toList(),
         ],
       ),
     );
   }
 
-  Widget buildSingleCheckbox() => CheckboxListTile(
+  Widget buildSingleCheckbox(CheckboxState checkbox) => CheckboxListTile(
     controlAffinity: ListTileControlAffinity.leading, // チェックボックスの位置を先頭に
-    title: Text('タイトル', style: TextStyle(fontSize: 20),),
+    title: Text(checkbox.title, style: TextStyle(fontSize: 20),),
     activeColor: Theme.of(context).primaryColor,
-    value: value2,
-    onChanged: (value) => setState(() => this.value2 = value),
+    value: checkbox.value,
+    onChanged: (value) => setState(() => checkbox.value = value),
   );
 }
