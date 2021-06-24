@@ -10,6 +10,8 @@ class _FormPageState extends State<FormPage> {
   bool value = false;
   bool value2 = false;
 
+  final allNotifications = CheckboxState(title: '全てチェック');
+
   final notifications = [
     CheckboxState(title: '屋根'),
     CheckboxState(title: 'バイク駐車場'),
@@ -39,6 +41,7 @@ class _FormPageState extends State<FormPage> {
           SizedBox(height: 50,),
           ...notifications.map(buildSingleCheckbox).toList(),
           SizedBox(height: 50,),
+          buildGroupCheckbox(allNotifications),
           Divider(color: Colors.purple,)
         ],
       ),
@@ -51,5 +54,13 @@ class _FormPageState extends State<FormPage> {
     activeColor: Theme.of(context).primaryColor,
     value: checkbox.value,
     onChanged: (value) => setState(() => checkbox.value = value),
+  );
+
+  Widget buildGroupCheckbox(CheckboxState checkbox) => CheckboxListTile(
+    controlAffinity: ListTileControlAffinity.leading, // チェックボックスの位置を先頭に
+    title: Text(checkbox.title, style: TextStyle(fontSize: 20),),
+    activeColor: Theme.of(context).primaryColor,
+    value: checkbox.value,
+    onChanged: null,
   );
 }
