@@ -53,7 +53,12 @@ class _FormPageState extends State<FormPage> {
     title: Text(checkbox.title, style: TextStyle(fontSize: 20),),
     activeColor: Theme.of(context).primaryColor,
     value: checkbox.value,
-    onChanged: (value) => setState(() => checkbox.value = value),
+    onChanged: (value) => setState(() {
+      checkbox.value = value;
+      allNotifications.value = 
+        notifications.every((notification) => notification.value);
+    }
+    ),
   );
 
   Widget buildGroupCheckbox(CheckboxState checkbox) => CheckboxListTile(
@@ -69,6 +74,7 @@ class _FormPageState extends State<FormPage> {
 
     setState(() {
       allNotifications.value = value;
+      notifications.forEach((notification) => notification.value = value);
     });
   }
 }
