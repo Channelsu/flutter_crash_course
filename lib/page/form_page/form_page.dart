@@ -61,6 +61,14 @@ class _FormPageState extends State<FormPage> {
     title: Text(checkbox.title, style: TextStyle(fontSize: 20),),
     activeColor: Theme.of(context).primaryColor,
     value: checkbox.value,
-    onChanged: null,
+    onChanged: toggleGroupCheckbox,
   );
+
+  void toggleGroupCheckbox(bool value) {
+    if(value == null) return null;
+
+    setState(() {
+      allNotifications.value = value;
+    });
+  }
 }
