@@ -6,8 +6,10 @@ class WeatherPage extends StatefulWidget {
 }
 
 class _WeatherPageState extends State<WeatherPage> {
+  Color backgroundColor = Colors.red;
+
   @override
   Widget build(BuildContext context) => Scaffold(
-      
+    backgroundColor: backgroundColor,
   );
 }
