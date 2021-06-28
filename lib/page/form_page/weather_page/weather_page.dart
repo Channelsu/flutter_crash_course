@@ -11,5 +11,10 @@ class _WeatherPageState extends State<WeatherPage> {
   @override
   Widget build(BuildContext context) => Scaffold(
     backgroundColor: backgroundColor,
+    appBar: AppBar(
+      // title: Text(MyApp.title),
+      title: Text('お天気'),
+      centerTitle: true,
+    ),
   );
 }
