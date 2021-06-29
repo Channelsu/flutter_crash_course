@@ -6,6 +6,7 @@ class WeatherPage extends StatefulWidget {
 }
 
 class _WeatherPageState extends State<WeatherPage> {
+  String smiley = '🥵';
   Color backgroundColor = Colors.red;
 
   @override
@@ -15,6 +16,11 @@ class _WeatherPageState extends State<WeatherPage> {
       // title: Text(MyApp.title),
       title: Text('お天気'),
       centerTitle: true,
+    ),
+    body: Column(
+      children: [
+        Text(smiley, style: TextStyle(fontSize: 100),)
+      ],
     ),
   );
 }
