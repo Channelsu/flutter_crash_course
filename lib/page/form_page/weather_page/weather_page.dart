@@ -7,6 +7,7 @@ class WeatherPage extends StatefulWidget {
 
 class _WeatherPageState extends State<WeatherPage> {
   String smiley = '🥵';
+  int degrees = 38;
   Color backgroundColor = Colors.red;
 
   @override
@@ -19,7 +20,9 @@ class _WeatherPageState extends State<WeatherPage> {
     ),
     body: Column(
       children: [
-        Text(smiley, style: TextStyle(fontSize: 100),)
+        Text(smiley, style: TextStyle(fontSize: 100),),
+        SizedBox(height: 24,),
+        Text('$degrees°C', style: TextStyle(fontSize: 80),),
       ],
     ),
   );
