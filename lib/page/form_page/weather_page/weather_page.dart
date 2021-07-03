@@ -18,12 +18,16 @@ class _WeatherPageState extends State<WeatherPage> {
       title: Text('お天気'),
       centerTitle: true,
     ),
-    body: Column(
-      children: [
-        Text(smiley, style: TextStyle(fontSize: 100),),
-        SizedBox(height: 24,),
-        Text('$degrees°C', style: TextStyle(fontSize: 80),),
-      ],
+    body: Container(
+      alignment: Alignment.center,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(smiley, style: TextStyle(fontSize: 100),),
+          SizedBox(height: 24,),
+          Text('$degrees°C', style: TextStyle(fontSize: 80),),
+        ],
+      ),
     ),
   );
 }
