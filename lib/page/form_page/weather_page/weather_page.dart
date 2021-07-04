@@ -26,6 +26,10 @@ class _WeatherPageState extends State<WeatherPage> {
           Text(smiley, style: TextStyle(fontSize: 100),),
           SizedBox(height: 24,),
           Text('$degrees°C', style: TextStyle(fontSize: 80),),
+          TextButton(
+            child: Text('チェンジ！！', style: TextStyle(fontSize: 24, color: Colors.white),),
+            onPressed: () {},
+          ),
         ],
       ),
     ),
