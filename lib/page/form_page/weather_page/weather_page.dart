@@ -28,10 +28,14 @@ class _WeatherPageState extends State<WeatherPage> {
           Text('$degrees°C', style: TextStyle(fontSize: 80),),
           TextButton(
             child: Text('チェンジ！！', style: TextStyle(fontSize: 24, color: Colors.white),),
-            onPressed: () {},
+            onPressed: changeWeather,
           ),
         ],
       ),
     ),
   );
+
+  void changeWeather(){
+
+  }
 }
