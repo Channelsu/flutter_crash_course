@@ -36,6 +36,10 @@ class _WeatherPageState extends State<WeatherPage> {
   );
 
   void changeWeather(){
-
+    setState(() {
+      smiley = '🥶';
+      degrees = -10;
+      backgroundColor = Colors.blueAccent.shade700;
+    });
   }
 }
