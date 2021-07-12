@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class WeatherPage extends StatefulWidget {
@@ -38,8 +40,11 @@ class _WeatherPageState extends State<WeatherPage> {
   void changeWeather(){
     setState(() {
       smiley = '🥶';
-      degrees = -10;
+      degrees = nextNumber(min: -20, max: 0);
       backgroundColor = Colors.blueAccent.shade700;
     });
   }
+
+  int nextNumber({int min, int max}) => 
+    min + Random().nextInt(max - min + 1);
 }
