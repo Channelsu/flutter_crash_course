@@ -38,10 +38,15 @@ class _WeatherPageState extends State<WeatherPage> {
   );
 
   void changeWeather(){
+    final counter = Random().nextInt(2);
     setState(() {
-      smiley = '🥶';
-      degrees = nextNumber(min: -20, max: 0);
-      backgroundColor = Colors.blueAccent.shade700;
+      switch(counter) {
+        case 0:
+          smiley = '🥶';
+          degrees = nextNumber(min: -20, max: 0);
+          backgroundColor = Colors.blueAccent.shade700;
+          break;
+      }
     });
   }
 
