@@ -46,6 +46,11 @@ class _WeatherPageState extends State<WeatherPage> {
           degrees = nextNumber(min: -20, max: 0);
           backgroundColor = Colors.blueAccent.shade700;
           break;
+        case 1:
+          smiley = '🥵';
+          degrees = nextNumber(min: 30, max: 45);
+          backgroundColor = Colors.red;
+          break;
       }
     });
   }
