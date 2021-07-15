@@ -38,7 +38,7 @@ class _WeatherPageState extends State<WeatherPage> {
   );
 
   void changeWeather(){
-    final counter = Random().nextInt(2);
+    final counter = Random().nextInt(3);
     setState(() {
       switch(counter) {
         case 0:
@@ -50,6 +50,11 @@ class _WeatherPageState extends State<WeatherPage> {
           smiley = '🥵';
           degrees = nextNumber(min: 30, max: 45);
           backgroundColor = Colors.red;
+          break;
+        case 2:
+          smiley = '☁️';
+          degrees = nextNumber(min: 5, max: 20);
+          backgroundColor = Colors.deepPurple;
           break;
       }
     });
