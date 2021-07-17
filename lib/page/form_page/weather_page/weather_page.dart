@@ -61,6 +61,11 @@ class _WeatherPageState extends State<WeatherPage> {
           degrees = nextNumber(min: 5, max: 20);
           backgroundColor = Colors.purple;
           break;
+        case 4:
+          smiley = '❄️';
+          degrees = nextNumber(min: -5, max: 3);
+          backgroundColor = Colors.blueAccent;
+          break;
       }
     });
   }
