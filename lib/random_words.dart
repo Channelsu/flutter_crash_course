@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:fluttercrashcourse/page/color_picker_page/color_picker_page.dart';
 import 'package:fluttercrashcourse/page/form_page/form_page.dart';
 import 'package:fluttercrashcourse/page/form_page/weather_page/weather_page.dart';
 import 'package:fluttercrashcourse/page/media_query_page/media_query_page.dart';
@@ -147,6 +148,17 @@ class _RandomWordsState extends State<RandomWords> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => WeatherPage(),
+                  )
+                );
+              },
+            ),
+            ListTile(
+              title: Text('カラーピッカー'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ColorPickerPage(),
                   )
                 );
               },
