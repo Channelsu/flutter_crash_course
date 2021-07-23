@@ -7,7 +7,7 @@ class ColorPickerPage extends StatefulWidget {
 
 class _ColorPickerPageState extends State<ColorPickerPage> {
   Color color = Colors.red;
-  
+
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
@@ -15,13 +15,19 @@ class _ColorPickerPageState extends State<ColorPickerPage> {
       centerTitle: true,
     ),
     body: Center(
-      child: Container(
-        decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          color: color,
-        ),
-        width: 120,
-        height: 120,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: color,
+            ),
+            width: 120,
+            height: 120,
+          ),
+
+        ],
       ),
     ),
   );
