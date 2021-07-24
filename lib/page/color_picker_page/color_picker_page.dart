@@ -26,9 +26,20 @@ class _ColorPickerPageState extends State<ColorPickerPage> {
             width: 120,
             height: 120,
           ),
-
+          SizedBox(height: 32,),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              padding: EdgeInsets.symmetric(horizontal: 24,)
+            ),
+            child: Text('色選択', style: TextStyle(fontSize: 24),),
+            onPressed: () => pickColor(context),
+          )
         ],
       ),
     ),
   );
+
+  void pickColor(BuildContext context) {
+
+  }
 }
