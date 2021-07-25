@@ -39,7 +39,14 @@ class _ColorPickerPageState extends State<ColorPickerPage> {
     ),
   );
 
-  void pickColor(BuildContext context) {
-
-  }
+  void pickColor(BuildContext context) => showDialog(
+    context: context,
+    builder: (context) => AlertDialog(
+      title: Text('色を選択して下さい'),
+      content: TextButton(
+        child: Text('決定', style: TextStyle(fontSize: 20),),
+        onPressed: () => Navigator.of(context).pop(),
+      ),
+    ),
+  );
 }
