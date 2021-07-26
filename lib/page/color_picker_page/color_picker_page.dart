@@ -39,13 +39,23 @@ class _ColorPickerPageState extends State<ColorPickerPage> {
     ),
   );
 
+  Widget buildColorPicker() {
+
+  }
+
   void pickColor(BuildContext context) => showDialog(
     context: context,
     builder: (context) => AlertDialog(
       title: Text('色を選択して下さい'),
-      content: TextButton(
-        child: Text('決定', style: TextStyle(fontSize: 20),),
-        onPressed: () => Navigator.of(context).pop(),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          buildColorPicker(),
+          TextButton(
+            child: Text('決定', style: TextStyle(fontSize: 20),),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+        ],
       ),
     ),
   );
