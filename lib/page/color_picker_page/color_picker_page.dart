@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
 class ColorPickerPage extends StatefulWidget {
   @override
@@ -39,9 +40,12 @@ class _ColorPickerPageState extends State<ColorPickerPage> {
     ),
   );
 
-  Widget buildColorPicker() {
-
-  }
+  Widget buildColorPicker() => ColorPicker(
+    pickerColor: color,
+    onColorChanged: (color) => setState(() => this.color = color),
+  );
+    
+  
 
   void pickColor(BuildContext context) => showDialog(
     context: context,
