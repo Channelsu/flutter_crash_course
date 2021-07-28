@@ -42,6 +42,8 @@ class _ColorPickerPageState extends State<ColorPickerPage> {
 
   Widget buildColorPicker() => ColorPicker(
     pickerColor: color,
+    enableAlpha: false,
+    showLabel: false,
     onColorChanged: (color) => setState(() => this.color = color),
   );
     
