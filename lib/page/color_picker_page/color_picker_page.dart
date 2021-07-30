@@ -46,14 +46,18 @@ class _ColorPickerPageState extends State<ColorPickerPage> {
   //   showLabel: false,
   //   onColorChanged: (color) => setState(() => this.color = color),
   // );
-  Widget buildColorPicker() => BlockPicker(
+  // Widget buildColorPicker() => BlockPicker(
+  //   pickerColor: color,
+  //   availableColors: [
+  //     Colors.green,
+  //     Colors.orange,
+  //     Colors.blue,
+  //     Colors.pink,
+  //   ],
+  //   onColorChanged: (color) => setState(() => this.color = color),
+  // );
+  Widget buildColorPicker() => SlidePicker(
     pickerColor: color,
-    availableColors: [
-      Colors.green,
-      Colors.orange,
-      Colors.blue,
-      Colors.pink,
-    ],
     onColorChanged: (color) => setState(() => this.color = color),
   );
     
