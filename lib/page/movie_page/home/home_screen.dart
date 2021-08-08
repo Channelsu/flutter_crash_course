@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:fluttercrashcourse/constants.dart';
+import 'package:fluttercrashcourse/page/movie_page/home/components/body.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -8,6 +9,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: buildAppBar(),
+      body: Body(),
     );
   }
 
