@@ -4,7 +4,7 @@ import 'package:fluttercrashcourse/page/color_picker_page/color_picker_page.dart
 import 'package:fluttercrashcourse/page/form_page/form_page.dart';
 import 'package:fluttercrashcourse/page/form_page/weather_page/weather_page.dart';
 import 'package:fluttercrashcourse/page/media_query_page/media_query_page.dart';
-import 'package:fluttercrashcourse/page/movie_page/home_screen.dart';
+import 'package:fluttercrashcourse/page/movie_page/home/home_screen.dart';
 import 'package:fluttercrashcourse/page/navigator_page/navigator_page.dart';
 
 class RandomWords extends StatefulWidget {
