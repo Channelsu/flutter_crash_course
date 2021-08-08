@@ -26,7 +26,7 @@ dependencies:
   # ランダムに英単語を生成するためのライブラリ
   english_words: ^3.1.5
   flutter_colorpicker: ^0.4.0
-  flutter_svg: ^0.17.4  # svgを扱いやすくするパッケージ
+  flutter_svg: ^0.19.0  # svgを扱いやすくするパッケージ
   animations: ^1.1.0  # アニメーションを作りやすくするパッケージ
 
   # The following adds the Cupertino Icons font to your application.
