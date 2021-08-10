@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttercrashcourse/constants.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -25,6 +26,27 @@ class _CategoryListState extends State<CategoryList> {
   Widget build(BuildContext context) {
     return Container(
       height: 60,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: categories.length,
+        itemBuilder: (BuildContext context, int index) => buildCategory(index, context),
+      ),
+    );
+  }
+
+  Padding buildCategory(int index, BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+      child: Column(
+        children: [
+          Text(
+            categories[index],
+            style: Theme.of(context).textTheme.headline5.copyWith(
+              fontWeight: FontWeight.w600
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
