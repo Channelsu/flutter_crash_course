@@ -37,26 +37,33 @@ class _CategoryListState extends State<CategoryList> {
   Padding buildCategory(int index, BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            categories[index],
-            style: Theme.of(context).textTheme.headline6.copyWith(
-              fontWeight: FontWeight.w600,
-              color: index == selectedCategory ? kTextColor : Colors.black.withOpacity(0.4),
+      child: GestureDetector(
+        onTap: () {
+          setState(() {
+            selectedCategory = index;   
+          });
+        },
+        child: Column(
+          // crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              categories[index],
+              style: Theme.of(context).textTheme.headline6.copyWith(
+                fontWeight: FontWeight.w600,
+                color: index == selectedCategory ? kTextColor : Colors.black.withOpacity(0.4),
+              ),
             ),
-          ),
-          Container(
-            margin: EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
-            height: 6,
-            width: 40,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: index == selectedCategory ? kSecondaryColor : Colors.transparent,
+            Container(
+              margin: EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
+              height: 6,
+              width: 40,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: index == selectedCategory ? kSecondaryColor : Colors.transparent,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
