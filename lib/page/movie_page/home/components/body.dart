@@ -9,7 +9,25 @@ class Body extends StatelessWidget {
       children: [
         CategoryList(),
         Genres(),
+        MovieCarousel(),
       ],
+    );
+  }
+}
+
+class MovieCarousel extends StatefulWidget {
+  @override
+  _MovieCarouselState createState() => _MovieCarouselState();
+}
+
+class _MovieCarouselState extends State<MovieCarousel> {
+  PageController _pageController;
+  int initialPage = 1;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      
     );
   }
 }
