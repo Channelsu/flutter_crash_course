@@ -31,12 +31,6 @@ class _MovieCarouselState extends State<MovieCarousel> {
   }
 
   @override
-  void dispose() { 
-    super.dispose();
-    _pageController.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Container(
       
