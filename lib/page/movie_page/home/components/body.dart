@@ -25,6 +25,12 @@ class _MovieCarouselState extends State<MovieCarousel> {
   int initialPage = 1;
 
   @override
+  void initState() { 
+    super.initState();
+    _pageController = PageController();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       
