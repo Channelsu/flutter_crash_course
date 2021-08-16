@@ -60,12 +60,24 @@ class MovieCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Expanded(
-          child: Container(),
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+      child: Column(
+        children: [
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                boxShadow: [kDefaultShadow],
+                image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: AssetImage(movie.poster)
+                )
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
