@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercrashcourse/components/genres.dart';
+import 'package:fluttercrashcourse/constants.dart';
 import 'package:fluttercrashcourse/page/movie_page/home/components/categories.dart';
 
 class Body extends StatelessWidget {
@@ -31,8 +32,15 @@ class _MovieCarouselState extends State<MovieCarousel> {
   }
 
   @override
+    void dispose() {
+      super.dispose();
+      _pageController.dispose();
+    }
+
+  @override
   Widget build(BuildContext context) {
-    return Container(
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: kDefaultPadding),
       
     );
   }
