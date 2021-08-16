@@ -76,6 +76,13 @@ class MovieCard extends StatelessWidget {
               ),
             ),
           ),
+          Padding(
+            padding: EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
+            child: Text(
+              movie.title,
+              style: Theme.of(context).textTheme.headline5.copyWith(fontWeight: FontWeight.w600),
+            ),
+          )
         ],
       ),
     );
