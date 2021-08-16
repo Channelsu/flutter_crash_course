@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercrashcourse/components/genres.dart';
 import 'package:fluttercrashcourse/constants.dart';
+import 'package:fluttercrashcourse/models/movie.dart';
 import 'package:fluttercrashcourse/page/movie_page/home/components/categories.dart';
 
 class Body extends StatelessWidget {
@@ -41,7 +42,30 @@ class _MovieCarouselState extends State<MovieCarousel> {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: kDefaultPadding),
-      
+      child: AspectRatio(
+        aspectRatio: 0.85,
+        child: PageView.builder(
+          itemCount: movies.length,
+          itemBuilder: (context, index) => MovieCard(movie: movies[index],)
+        ),
+      ),
+    );
+  }
+}
+
+class MovieCard extends StatelessWidget {
+  final Movie movie;
+  // コンストラクタを右クリックで作成
+  const MovieCard({Key key, this.movie}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Expanded(
+          child: Container(),
+        ),
+      ],
     );
   }
 }
