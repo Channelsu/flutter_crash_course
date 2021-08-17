@@ -30,7 +30,12 @@ class _MovieCarouselState extends State<MovieCarousel> {
   @override
   void initState() { 
     super.initState();
-    _pageController = PageController();
+    _pageController = PageController(
+      // カードの左右に小さく次のカードの一部を表示
+      viewportFraction: 0.8,
+      // デフォルトを設定
+      initialPage: initialPage,
+    );
   }
 
   @override
@@ -46,6 +51,7 @@ class _MovieCarouselState extends State<MovieCarousel> {
       child: AspectRatio(
         aspectRatio: 0.85,
         child: PageView.builder(
+          controller: _pageController,
           itemCount: movies.length,
           itemBuilder: (context, index) => MovieCard(movie: movies[index],)
         ),
