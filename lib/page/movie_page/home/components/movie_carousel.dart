@@ -39,7 +39,13 @@ class _MovieCarouselState extends State<MovieCarousel> {
       child: AspectRatio(
         aspectRatio: 0.85,
         child: PageView.builder(
+          onPageChanged: (value) {
+            setState(() {
+              initialPage = value;
+            });
+          },
           controller: _pageController,
+          physics: ClampingScrollPhysics(),
           itemCount: movies.length,
           itemBuilder: (context, index) => buildMovieSlider(index)
         ),
@@ -57,9 +63,13 @@ class _MovieCarouselState extends State<MovieCarousel> {
         // clampを使用するのはvalueが-1から1まで変化するから
         value = (value * 0.038).clamp(-1, 1);
       }
-      return Transform.rotate(
-        angle: math.pi * value,
-        child: MovieCard(movie: movies[index]),
+      return AnimatedOpacity(
+        duration: Duration(milliseconds: 350),
+        opacity: initialPage == index ? 1 : 0.4,
+        child: Transform.rotate(
+          angle: math.pi * value,
+          child: MovieCard(movie: movies[index]),
+        ),
       );
     },
   );
