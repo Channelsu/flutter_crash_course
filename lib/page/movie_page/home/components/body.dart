@@ -8,13 +8,18 @@ import 'package:fluttercrashcourse/page/movie_page/home/components/movie_carouse
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        CategoryList(),
-        Genres(),
-        SizedBox(height: kDefaultPadding,),
-        MovieCarousel(),
-      ],
+    // 画面に入りきらない表示をスクロールさせたい時にSingleChildScrollViewを使う。
+    // 通常スクロールできるリストを表示する場合はListViewを使うが、
+    // リストではない場合このSingleChildscrollviewを使う。
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          CategoryList(),
+          Genres(),
+          SizedBox(height: kDefaultPadding,),
+          MovieCarousel(),
+        ],
+      ),
     );
   }
 }
