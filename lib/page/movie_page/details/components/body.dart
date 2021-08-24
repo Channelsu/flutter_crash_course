@@ -20,6 +20,7 @@ class Body extends StatelessWidget {
               Container(
                 height: size.height * 0.4 -50,
                 decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(50)),
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: AssetImage(
