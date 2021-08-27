@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fluttercrashcourse/constants.dart';
 import 'package:fluttercrashcourse/models/movie.dart';
 
 class Body extends StatelessWidget {
@@ -29,10 +31,12 @@ class Body extends StatelessWidget {
                   )
                 ),
               ),
+              // レーティング部分
               Positioned(
                 bottom: 0,
                 right: 0,
                 child: Container(
+                  // 横幅をmaxの９割に設定
                   width: size.width * 0.9,
                   height: 100,
                   decoration: BoxDecoration(
@@ -49,12 +53,47 @@ class Body extends StatelessWidget {
                       )
                     ]
                   ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      // 星
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SvgPicture.asset('assets/icons/star_fill.svg'),
+                          SizedBox(height: kDefaultPadding / 4,),
+                          RichText(
+                            text: TextSpan(
+                              style: TextStyle(color: Colors.black),
+                              children: [
+                                TextSpan(
+                                  text: '${movie.rating}/',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                                TextSpan(text: '10\n'),
+                                TextSpan(
+                                  text: '150,212',
+                                  style: TextStyle(color: kTextLightColor),
+                                ),
+                              ]
+                            )
+                          ),
+                        ],
+                      ),
+                      // 評価星ボタン
+                      Column(),
+                      // レビュー
+                      Column(),
+                    ],
+                  ),
                 ), 
               ),
             ],
           ),
         ),
-        // レーティング部分
       ],
     );
   }
