@@ -84,7 +84,14 @@ class Body extends StatelessWidget {
                         ],
                       ),
                       // 評価星ボタン
-                      Column(),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SvgPicture.asset('assets/icons/star.svg'),
+                          SizedBox(height: kDefaultPadding/ 4,),
+                          Text('評価する', style: Theme.of(context).textTheme.bodyText2,)
+                        ],
+                      ),
                       // レビュー
                       Column(),
                     ],
