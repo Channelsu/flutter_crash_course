@@ -3,6 +3,7 @@ import 'package:english_words/english_words.dart';
 import 'package:fluttercrashcourse/page/color_picker_page/color_picker_page.dart';
 import 'package:fluttercrashcourse/page/form_page/form_page.dart';
 import 'package:fluttercrashcourse/page/form_page/weather_page/weather_page.dart';
+import 'package:fluttercrashcourse/page/login_page/login_page.dart';
 import 'package:fluttercrashcourse/page/media_query_page/media_query_page.dart';
 import 'package:fluttercrashcourse/page/movie_page/home/home_screen.dart';
 import 'package:fluttercrashcourse/page/navigator_page/navigator_page.dart';
@@ -108,6 +109,17 @@ class _RandomWordsState extends State<RandomWords> {
               decoration: BoxDecoration(
                 color: Theme.of(context).primaryColor,
               ),
+            ),
+            ListTile(
+              title: Text('ログイン'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LoginPage(),
+                  )
+                );
+              },
             ),
             ListTile(
               title: Text('画面遷移'),
