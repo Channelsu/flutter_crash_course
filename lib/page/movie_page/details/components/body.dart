@@ -127,7 +127,7 @@ class Body extends StatelessWidget {
                 ), 
               ),
               // 戻るボタン
-
+              SafeArea(child: BackButton()),
             ],
           ),
         ),
