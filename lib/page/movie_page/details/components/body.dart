@@ -23,8 +23,22 @@ class Body extends StatelessWidget {
               // 映画タイトル
               Expanded(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    Text(
+                      movie.title,
+                      style: Theme.of(context).textTheme.headline5,
+                    ),
+                    SizedBox(height: kDefaultPadding / 2,),
+                    // Row(
+                    //   children: [
+                    //     Text(
+                    //       '${movie.year}',
+                    //       style: TextStyle(color: kTextLightColor),
+                    //     ),
 
+                    //   ],
+                    // ),
                   ],
                 )
               ),
