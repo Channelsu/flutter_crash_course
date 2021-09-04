@@ -30,15 +30,24 @@ class Body extends StatelessWidget {
                       style: Theme.of(context).textTheme.headline5,
                     ),
                     SizedBox(height: kDefaultPadding / 2,),
-                    // Row(
-                    //   children: [
-                    //     Text(
-                    //       '${movie.year}',
-                    //       style: TextStyle(color: kTextLightColor),
-                    //     ),
-
-                    //   ],
-                    // ),
+                    Row(
+                      children: [
+                        Text(
+                          '${movie.year}',
+                          style: TextStyle(color: kTextLightColor),
+                        ),
+                        SizedBox(width: kDefaultPadding,),
+                        Text(
+                          'PG-13',
+                          style: TextStyle(color: kTextLightColor),
+                        ),
+                        SizedBox(width: kDefaultPadding,),
+                        Text(
+                          '2時間32分',
+                          style: TextStyle(color: kTextLightColor),
+                        ),
+                      ],
+                    ),
                   ],
                 )
               ),
