@@ -29,6 +29,7 @@ dependencies:
   animations: ^1.1.0            # アニメーションを作りやすくするパッケージ
   firebase_core: ^1.6.0         # firebase
   cloud_firestore: ^2.5.1       # cloud_firestore
+  firebase_auth: ^3.1.0         # 認証機能
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
