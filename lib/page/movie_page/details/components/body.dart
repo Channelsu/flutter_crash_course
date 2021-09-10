@@ -16,8 +16,11 @@ class Body extends StatelessWidget {
     return Column(
       children: <Widget>[
         BackdropAndRating(size: size, movie: movie),
+        SizedBox(height: kDefaultPadding / 2,),
         // 映画タイトルとプラスボタン部分
-        TitleDurationAndFavBtn(movie: movie)
+        TitleDurationAndFavBtn(movie: movie),
+        // タグ部分
+        
       ],
     );
   }
