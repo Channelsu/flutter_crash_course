@@ -52,16 +52,34 @@ class _LoginPageState extends State<LoginPage> {
             // ログインボタン
             SizedBox(
               width: MediaQuery.of(context).size.width * 0.9,
+              height: 48,
               child: ElevatedButton(
-                child: const Text('ログイン'),
+                child: const Text(
+                  'ログイン',
+                  style: TextStyle(fontSize: 22),
+                ),
                 style: ElevatedButton.styleFrom(
                   shape: const StadiumBorder(),
                 ),
                 onPressed: () {},
               ),
             ),
+            SizedBox(height: 48,),
             // 新規アカウント作成ボタン
-
+            TextButton(
+              child: Text(
+                'アカウントを作成',
+                style: TextStyle(
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+              style: TextButton.styleFrom(
+                textStyle: TextStyle(
+                  fontSize: 16,
+                ),
+              ),
+              onPressed: () {},
+            ),
           ],
         ),
       ),
