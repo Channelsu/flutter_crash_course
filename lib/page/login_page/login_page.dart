@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:fluttercrashcourse/random_words.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -61,7 +62,30 @@ class _LoginPageState extends State<LoginPage> {
                 style: ElevatedButton.styleFrom(
                   shape: const StadiumBorder(),
                 ),
-                onPressed: () {},
+                onPressed: () async {
+                  try {
+                    // メール/パスワードでログイン
+                    final UserCredential result = await auth.signInWithEmailAndPassword(
+                      email: email,
+                      password: password,
+                    );
+                    // ログインに成功した場合
+                    final User user = result.user;
+                    print('ログインユーザーのメール⇨${user.email}');
+                    // ホーム画面に遷移
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => RandomWords(),
+                      )
+                    );
+                  } catch (e) {
+                    // ログインに失敗した場合
+                    // setState(() {
+                      print('ログインエラー：${e.toString()}');                   
+                    // });
+                  }
+                },
               ),
             ),
             SizedBox(height: 48,),
