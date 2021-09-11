@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:fluttercrashcourse/page/login_page/registration_page.dart';
 import 'package:fluttercrashcourse/random_words.dart';
 
 class LoginPage extends StatefulWidget {
@@ -102,7 +103,14 @@ class _LoginPageState extends State<LoginPage> {
                   fontSize: 16,
                 ),
               ),
-              onPressed: () {},
+              onPressed: (){
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    fullscreenDialog: true,
+                    builder: (BuildContext context) => RegistrationPage(),
+                  ),
+                );
+              }
             ),
           ],
         ),
