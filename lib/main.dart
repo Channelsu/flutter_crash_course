@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttercrashcourse/page/sign_up_page/sign_up_page.dart';
-import './random_words.dart';
+import 'package:fluttercrashcourse/page/login_page/login_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
         unselectedWidgetColor: Colors.purple[900],
       ),
       // home: RandomWords(),
-      home: SignUpPage(),
+      home: LoginPage(),
     );
   }
 }
