@@ -48,9 +48,18 @@ class _LoginPageState extends State<LoginPage> {
                 },
               ),
             ),
-
+            SizedBox(height: 24,),
             // ログインボタン
-
+            SizedBox(
+              width: MediaQuery.of(context).size.width * 0.9,
+              child: ElevatedButton(
+                child: const Text('ログイン'),
+                style: ElevatedButton.styleFrom(
+                  shape: const StadiumBorder(),
+                ),
+                onPressed: () {},
+              ),
+            ),
             // 新規アカウント作成ボタン
 
           ],
