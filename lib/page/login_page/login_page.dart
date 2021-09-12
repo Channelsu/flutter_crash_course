@@ -19,6 +19,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -89,7 +90,26 @@ class _LoginPageState extends State<LoginPage> {
                 },
               ),
             ),
-            SizedBox(height: 48,),
+            SizedBox(height: 12,),
+            // パスワード忘れボタン
+            TextButton(
+              child: Text(
+                'パスワードをお忘れですか？',
+                style: TextStyle(
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+              style: TextButton.styleFrom(
+                textStyle: TextStyle(
+                  fontSize: 16,
+                ),
+              ),
+              onPressed: (){
+                
+              }
+            ),
+            Divider(color: Colors.grey,),
+            SizedBox(height: 24,),
             // 新規アカウント作成ボタン
             TextButton(
               child: Text(
