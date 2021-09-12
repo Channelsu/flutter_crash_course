@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:fluttercrashcourse/page/book_list_page/book_list_page.dart';
 import 'package:fluttercrashcourse/page/color_picker_page/color_picker_page.dart';
 import 'package:fluttercrashcourse/page/form_page/form_page.dart';
 import 'package:fluttercrashcourse/page/form_page/weather_page/weather_page.dart';
@@ -183,6 +184,17 @@ class _RandomWordsState extends State<RandomWords> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => HomeScreen(),
+                  )
+                );
+              },
+            ),
+            ListTile(
+              title: Text('本リスト'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BookListPage(),
                   )
                 );
               },
