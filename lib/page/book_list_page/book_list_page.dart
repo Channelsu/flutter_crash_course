@@ -6,6 +6,9 @@ class BookListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('本のリスト'),
+      ),
       body: Center(
         child: StreamBuilder<QuerySnapshot>(
           stream: _usersStream,
