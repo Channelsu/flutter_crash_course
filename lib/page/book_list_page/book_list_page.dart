@@ -5,11 +5,11 @@ import 'package:fluttercrashcourse/provider/books_provider.dart';
 import 'package:provider/provider.dart';
 
 class BookListPage extends StatelessWidget {
-  String title = '';
-  String author = '';
 
   @override
   Widget build(BuildContext context) {
+    String title = '';
+    String author = '';
     return ChangeNotifierProvider<BooksProvider>(
       create: (_) => BooksProvider()..fetchBookList(),
       child: Scaffold(
@@ -52,7 +52,7 @@ class BookListPage extends StatelessWidget {
                           labelText: 'タイトル'
                         ),
                         onChanged: (String val) {
-                          this.title = val;
+                          title = val;
                         },
                       ),
                       TextFormField(
@@ -60,7 +60,7 @@ class BookListPage extends StatelessWidget {
                           labelText: '著者'
                         ),
                         onChanged: (String val) {
-                          this.author = val;
+                          author = val;
                         },
                       ),
                     ]
@@ -69,8 +69,8 @@ class BookListPage extends StatelessWidget {
                     TextButton(
                       onPressed: () {
                         Map<String, String> newBook = {
-                          "title": this.title,
-                          "author": this.author,
+                          "title": title,
+                          "author": author,
                         };
                         FirebaseFirestore.instance.collection('books').doc().set(newBook);
                         Navigator.of(context).pop(false);
