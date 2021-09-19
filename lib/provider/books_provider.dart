@@ -12,6 +12,7 @@ class BooksProvider extends ChangeNotifier {
   void fetchBookList() {
     _usersStream.listen((QuerySnapshot snapshot) {
       print(snapshot);
+      // DocumentSnapshot型からBook型へ変換処理
       final List<Book> books = snapshot.docs.map((DocumentSnapshot document) {
         // 以下Bookを作る
         Map<String, dynamic> data = document.data() as Map<String, dynamic>;
