@@ -72,8 +72,12 @@ class BookListPage extends StatelessWidget {
                           "title": title,
                           "author": author,
                         };
-                        FirebaseFirestore.instance.collection('books').doc().set(newBook);
-                        Navigator.of(context).pop(false);
+                        FirebaseFirestore.instance
+                          .collection('books')
+                          .doc()
+                          .set(newBook)
+                          .whenComplete(() => Navigator.of(context).pop(false));
+                        // Navigator.of(context).pop(false);
                       },
                       child: Text('追加'),
                     ),
