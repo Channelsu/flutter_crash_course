@@ -1,9 +1,13 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttercrashcourse/models/book.dart';
 import 'package:fluttercrashcourse/provider/books_provider.dart';
 import 'package:provider/provider.dart';
 
 class BookListPage extends StatelessWidget {
+  String title = '';
+  String author = '';
+
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<BooksProvider>(
@@ -30,6 +34,58 @@ class BookListPage extends StatelessWidget {
               children: widgets,
             );
           },),
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+          onPressed: () {
+            showDialog(
+              context: context,
+              builder: (context) {
+                return AlertDialog(
+                  title: Text('本を追加'),
+                  content: Column(
+                    // これが無いと縦幅が大きくなる
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      TextFormField(
+                        decoration: InputDecoration(
+                          labelText: 'タイトル'
+                        ),
+                        onChanged: (String val) {
+                          this.title = val;
+                        },
+                      ),
+                      TextFormField(
+                        decoration: InputDecoration(
+                          labelText: '著者'
+                        ),
+                        onChanged: (String val) {
+                          this.author = val;
+                        },
+                      ),
+                    ]
+                  ),
+                  actions: [
+                    TextButton(
+                      onPressed: () {
+                        Map<String, String> newBook = {
+                          "title": this.title,
+                          "author": this.author,
+                        };
+                        FirebaseFirestore.instance.collection('books').doc().set(newBook);
+                        Navigator.of(context).pop(false);
+                      },
+                      child: Text('追加'),
+                    ),
+                    TextButton(
+                      onPressed: () => Navigator.of(context).pop(false),
+                      child: Text('キャンセル'),
+                    ),
+                  ],
+                );
+              },
+            );
+          },
         ),
       ),
     );
