@@ -22,6 +22,14 @@ class Body extends StatelessWidget {
         TitleDurationAndFavBtn(movie: movie),
         // タグ部分
         Genres(movie: movie),
+        // 概要部分
+        Padding(
+          padding: EdgeInsets.symmetric(
+            vertical: kDefaultPadding / 2,
+            horizontal: kDefaultPadding,
+          ),
+          child: Text('概要'),
+        ),
       ],
     );
   }
