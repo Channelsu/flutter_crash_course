@@ -15,6 +15,7 @@ class Body extends StatelessWidget {
     // 高さと横幅
     Size size = MediaQuery.of(context).size;
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         BackdropAndRating(size: size, movie: movie),
         SizedBox(height: kDefaultPadding / 2,),
@@ -28,7 +29,10 @@ class Body extends StatelessWidget {
             vertical: kDefaultPadding / 2,
             horizontal: kDefaultPadding,
           ),
-          child: Text('概要'),
+          child: Text(
+            '概要',
+            style: Theme.of(context).textTheme.headline5,
+          ),
         ),
       ],
     );
