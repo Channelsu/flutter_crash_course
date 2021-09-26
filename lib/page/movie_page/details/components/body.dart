@@ -34,6 +34,8 @@ class Body extends StatelessWidget {
             style: Theme.of(context).textTheme.headline5,
           ),
         ),
+        // 概要内容
+        Text(movie.plot),
       ],
     );
   }
