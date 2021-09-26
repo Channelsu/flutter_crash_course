@@ -35,7 +35,7 @@ List<Movie> movies = [
     criticsReview: 50,
     metascoreRating: 76,
     genra: ["Action", "Drama"],
-    plot: plotText,
+    plot: "「ワイルド・スピード」シリーズのビン・ディーゼル主演で、アメコミ「バリアント・コミックス」の人気キャラクター「ブラッドショット」を実写映画化したアクション。アメリカ海兵隊員のレイ・ギャリソンは、何者かの襲撃を受けて妻ジーナとともに拉致され、襲撃の首謀者マーティン・アレックスの手によって妻を殺されてしまう。",
     cast: [
       {
         "orginalName": "James Mangold",
@@ -70,7 +70,7 @@ List<Movie> movies = [
     criticsReview: 50,
     metascoreRating: 76,
     genra: ["Action", "Biography", "Drama"],
-    plot: plotText,
+    plot: "マット・デイモンとクリスチャン・ベールが初共演でダブル主演を務め、1966年のル・マン24時間耐久レースで絶対王者フェラーリに挑んだフォードの男たちを描いたドラマ。",
     cast: [
       {
         "orginalName": "James Mangold",
@@ -105,7 +105,7 @@ List<Movie> movies = [
     criticsReview: 50,
     metascoreRating: 79,
     genra: ["Action", "Drama"],
-    plot: plotText,
+    plot: "「リメンバー・ミー」「トイ・ストーリー4」のピクサー・アニメーションによる長編作品。亡くなった父親にもう一度会いたいと願う兄弟が、魔法によって半分だけ復活した父親を完全によみがえらせるため奮闘する姿を描いた。",
     cast: [
       {
         "orginalName": "James Mangold",
@@ -131,5 +131,5 @@ List<Movie> movies = [
   ),
 ];
 
-String plotText =
-    "American car designer Carroll Shelby and driver Kn Miles battle corporate interference and the laws of physics to build a revolutionary race car for Ford in order.";
+// String plotText =
+//     "American car designer Carroll Shelby and driver Kn Miles battle corporate interference and the laws of physics to build a revolutionary race car for Ford in order.";
