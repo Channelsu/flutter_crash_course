@@ -35,7 +35,15 @@ class Body extends StatelessWidget {
           ),
         ),
         // 概要内容
-        Text(movie.plot),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+          child: Text(
+            movie.plot,
+            style: TextStyle(
+              color: Color(0xFF737599),
+            ),
+          ),
+        ),
       ],
     );
   }
