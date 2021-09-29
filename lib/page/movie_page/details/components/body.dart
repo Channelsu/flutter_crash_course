@@ -44,7 +44,26 @@ class Body extends StatelessWidget {
             ),
           ),
         ),
+        // 出演者部分
+        CastAndCrew(),
       ],
+    );
+  }
+}
+
+class CastAndCrew extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.all(kDefaultPadding),
+      child: Column(
+        children: [
+          Text(
+            '出演',
+            style: Theme.of(context).textTheme.headline5,
+          )
+        ],
+      ),
     );
   }
 }
