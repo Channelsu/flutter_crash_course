@@ -61,7 +61,8 @@ class CastAndCrew extends StatelessWidget {
           Text(
             '出演',
             style: Theme.of(context).textTheme.headline5,
-          )
+          ),
+          SizedBox(height: kDefaultPadding / 2),
         ],
       ),
     );
