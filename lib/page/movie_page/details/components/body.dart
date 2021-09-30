@@ -45,13 +45,17 @@ class Body extends StatelessWidget {
           ),
         ),
         // 出演者部分
-        CastAndCrew(),
+        CastAndCrew(casts: movie.cast),
       ],
     );
   }
 }
 
 class CastAndCrew extends StatelessWidget {
+  final List casts;
+
+  const CastAndCrew({Key key, this.casts}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -59,10 +63,18 @@ class CastAndCrew extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            '出演',
+            '出演者',
             style: Theme.of(context).textTheme.headline5,
           ),
           SizedBox(height: kDefaultPadding / 2),
+          SizedBox(
+            height: 160,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: casts.length,
+              itemBuilder: (BuildContext context, int index) => CastCard(cast: casts[index]),
+            ),
+          )
         ],
       ),
     );
