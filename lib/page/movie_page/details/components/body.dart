@@ -104,6 +104,8 @@ class CastCard extends StatelessWidget {
               )
             ),
           ),
+          SizedBox(height: kDefaultPadding / 2,),
+          
         ],
       ),
     );
