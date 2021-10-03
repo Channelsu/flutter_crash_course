@@ -38,22 +38,22 @@ List<Movie> movies = [
     plot: "「ワイルド・スピード」シリーズのビン・ディーゼル主演で、アメコミ「バリアント・コミックス」の人気キャラクター「ブラッドショット」を実写映画化したアクション。アメリカ海兵隊員のレイ・ギャリソンは、何者かの襲撃を受けて妻ジーナとともに拉致され、襲撃の首謀者マーティン・アレックスの手によって妻を殺されてしまう。",
     cast: [
       {
-        "orginalName": "James Mangold",
+        "originalName": "James Mangold",
         "movieName": "Director",
         "image": "assets/images/actor_1.png",
       },
       {
-        "orginalName": "Matt Damon",
+        "originalName": "Matt Damon",
         "movieName": "Carroll",
         "image": "assets/images/actor_2.png",
       },
       {
-        "orginalName": "Christian Bale",
+        "originalName": "Christian Bale",
         "movieName": "Ken Miles",
         "image": "assets/images/actor_3.png",
       },
       {
-        "orginalName": "Caitriona Balfe",
+        "originalName": "Caitriona Balfe",
         "movieName": "Mollie",
         "image": "assets/images/actor_4.png",
       },
@@ -73,22 +73,22 @@ List<Movie> movies = [
     plot: "マット・デイモンとクリスチャン・ベールが初共演でダブル主演を務め、1966年のル・マン24時間耐久レースで絶対王者フェラーリに挑んだフォードの男たちを描いたドラマ。",
     cast: [
       {
-        "orginalName": "James Mangold",
+        "originalName": "James Mangold",
         "movieName": "Director",
         "image": "assets/images/actor_1.png",
       },
       {
-        "orginalName": "Matt Damon",
+        "originalName": "Matt Damon",
         "movieName": "Carroll",
         "image": "assets/images/actor_2.png",
       },
       {
-        "orginalName": "Christian Bale",
+        "originalName": "Christian Bale",
         "movieName": "Ken Miles",
         "image": "assets/images/actor_3.png",
       },
       {
-        "orginalName": "Caitriona Balfe",
+        "originalName": "Caitriona Balfe",
         "movieName": "Mollie",
         "image": "assets/images/actor_4.png",
       },
@@ -108,22 +108,22 @@ List<Movie> movies = [
     plot: "「リメンバー・ミー」「トイ・ストーリー4」のピクサー・アニメーションによる長編作品。亡くなった父親にもう一度会いたいと願う兄弟が、魔法によって半分だけ復活した父親を完全によみがえらせるため奮闘する姿を描いた。",
     cast: [
       {
-        "orginalName": "James Mangold",
+        "originalName": "James Mangold",
         "movieName": "Director",
         "image": "assets/images/actor_1.png",
       },
       {
-        "orginalName": "Matt Damon",
+        "originalName": "Matt Damon",
         "movieName": "Carroll",
         "image": "assets/images/actor_2.png",
       },
       {
-        "orginalName": "Christian Bale",
+        "originalName": "Christian Bale",
         "movieName": "Ken Miles",
         "image": "assets/images/actor_3.png",
       },
       {
-        "orginalName": "Caitriona Balfe",
+        "originalName": "Caitriona Balfe",
         "movieName": "Mollie",
         "image": "assets/images/actor_4.png",
       },
