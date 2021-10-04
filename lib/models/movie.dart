@@ -35,25 +35,25 @@ List<Movie> movies = [
     criticsReview: 50,
     metascoreRating: 76,
     genra: ["Action", "Drama"],
-    plot: "「ワイルド・スピード」シリーズのビン・ディーゼル主演で、アメコミ「バリアント・コミックス」の人気キャラクター「ブラッドショット」を実写映画化したアクション。アメリカ海兵隊員のレイ・ギャリソンは、何者かの襲撃を受けて妻ジーナとともに拉致され、襲撃の首謀者マーティン・アレックスの手によって妻を殺されてしまう。",
+    plot: "「ワイルド・スピード」シリーズのビン・ディーゼル主演で、アメコミ「バリアント・コミックス」の人気キャラクター「ブラッドショット」を実写映画化したアクション。",
     cast: [
       {
-        "originalName": "James Mangold",
+        "originalName": "田中太郎",
         "movieName": "Director",
         "image": "assets/images/actor_1.png",
       },
       {
-        "originalName": "Matt Damon",
+        "originalName": "山田次郎",
         "movieName": "Carroll",
         "image": "assets/images/actor_2.png",
       },
       {
-        "originalName": "Christian Bale",
+        "originalName": "渡辺花子",
         "movieName": "Ken Miles",
         "image": "assets/images/actor_3.png",
       },
       {
-        "originalName": "Caitriona Balfe",
+        "originalName": "足立雪子",
         "movieName": "Mollie",
         "image": "assets/images/actor_4.png",
       },
@@ -73,22 +73,22 @@ List<Movie> movies = [
     plot: "マット・デイモンとクリスチャン・ベールが初共演でダブル主演を務め、1966年のル・マン24時間耐久レースで絶対王者フェラーリに挑んだフォードの男たちを描いたドラマ。",
     cast: [
       {
-        "originalName": "James Mangold",
+        "originalName": "田中太郎",
         "movieName": "Director",
         "image": "assets/images/actor_1.png",
       },
       {
-        "originalName": "Matt Damon",
+        "originalName": "山田次郎",
         "movieName": "Carroll",
         "image": "assets/images/actor_2.png",
       },
       {
-        "originalName": "Christian Bale",
+        "originalName": "渡辺花子",
         "movieName": "Ken Miles",
         "image": "assets/images/actor_3.png",
       },
       {
-        "originalName": "Caitriona Balfe",
+        "originalName": "足立雪子",
         "movieName": "Mollie",
         "image": "assets/images/actor_4.png",
       },
@@ -105,25 +105,25 @@ List<Movie> movies = [
     criticsReview: 50,
     metascoreRating: 79,
     genra: ["Action", "Drama"],
-    plot: "「リメンバー・ミー」「トイ・ストーリー4」のピクサー・アニメーションによる長編作品。亡くなった父親にもう一度会いたいと願う兄弟が、魔法によって半分だけ復活した父親を完全によみがえらせるため奮闘する姿を描いた。",
+    plot: "「リメンバー・ミー」「トイ・ストーリー4」のピクサー・アニメーションによる長編作品。亡くなった父親にもう一度会いたいと願う兄弟が・・・",
     cast: [
       {
-        "originalName": "James Mangold",
+        "originalName": "田中太郎",
         "movieName": "Director",
         "image": "assets/images/actor_1.png",
       },
       {
-        "originalName": "Matt Damon",
+        "originalName": "山田次郎",
         "movieName": "Carroll",
         "image": "assets/images/actor_2.png",
       },
       {
-        "originalName": "Christian Bale",
+        "originalName": "渡辺花子",
         "movieName": "Ken Miles",
         "image": "assets/images/actor_3.png",
       },
       {
-        "originalName": "Caitriona Balfe",
+        "originalName": "足立雪子",
         "movieName": "Mollie",
         "image": "assets/images/actor_4.png",
       },
