@@ -105,7 +105,12 @@ class CastCard extends StatelessWidget {
             ),
           ),
           SizedBox(height: kDefaultPadding / 2,),
-          
+          Text(
+            cast['originalName'],
+            textAlign: TextAlign.center,
+            style: Theme.of(context).textTheme.bodyText2,
+            maxLines: 2,
+          )
         ],
       ),
     );
