@@ -8,6 +8,7 @@ import 'package:fluttercrashcourse/page/login_page/login_page.dart';
 import 'package:fluttercrashcourse/page/media_query_page/media_query_page.dart';
 import 'package:fluttercrashcourse/page/movie_page/home/home_screen.dart';
 import 'package:fluttercrashcourse/page/navigator_page/navigator_page.dart';
+import 'package:fluttercrashcourse/page/others_page/others_page.dart';
 
 class RandomWords extends StatefulWidget {
   @override
@@ -195,6 +196,17 @@ class _RandomWordsState extends State<RandomWords> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => BookListPage(),
+                  )
+                );
+              },
+            ),
+            ListTile(
+              title: Text('その他'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>  OthersPage(),
                   )
                 );
               },
