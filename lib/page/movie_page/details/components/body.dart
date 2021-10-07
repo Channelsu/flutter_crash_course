@@ -110,7 +110,9 @@ class CastCard extends StatelessWidget {
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.bodyText2,
             maxLines: 2,
-          )
+          ),
+          SizedBox(height: kDefaultPadding / 4,),
+          
         ],
       ),
     );
