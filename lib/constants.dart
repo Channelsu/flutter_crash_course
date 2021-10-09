@@ -23,6 +23,11 @@ enum EBtnType {
   fileMenuBtn,
   settingMenuBtn,
 }
+
+enum DialogType {
+  detail,
+  delete,
+}
 // その他で使用する定数 ここまで -------------------------
 
 
