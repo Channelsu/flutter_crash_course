@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// 映画アプリで使用する定数 ---------------------------------
 // アプリ内で使用する色
 const kSecondaryColor = Color(0xFFFE6D8E);
 const kTextColor = Color(0xFF12153D);
@@ -13,3 +14,15 @@ const kDefaultShadow = BoxShadow(
   blurRadius: 4,
   color: Colors.black26,
 );
+// 映画アプリで使用する定数 ここまで -------------------------
+
+
+// その他で使用する定数 ---------------------------------
+enum EBtnType {
+  topMenuBtn,
+  fileMenuBtn,
+  settingMenuBtn,
+}
+// その他で使用する定数 ここまで -------------------------
+
+
