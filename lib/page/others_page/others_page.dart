@@ -44,9 +44,9 @@ class _OthersPageState extends State<OthersPage> {
   Future<void> showSettings(BuildContext context) {
     return showDialog(
       context: context,
-      barrierDismissible: false,
+      // barrierDismissible: false,
       builder: (_) {
-        return RecordDialog();
+        return RecordDialog(type: DialogType.detail,);
       },
     );
   }
