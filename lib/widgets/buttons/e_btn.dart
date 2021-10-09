@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:fluttercrashcourse/constants.dart';
 
 class EBtn extends StatelessWidget {
   final String label;
-  final String type;
+  // final String type;
+  final EBtnType type;
   final VoidCallback onPressd;
-  final DateTime now = DateTime.now();
 
   EBtn({@required this.label, @required this.type, @required this.onPressd});
 
@@ -35,35 +36,35 @@ class EBtn extends StatelessWidget {
   }
 
   // ボタンの横幅を決めるメソッド
-  double decideWidth({String type, BuildContext context}) {  // {}で括ると名前付き引数になる
+  double decideWidth({EBtnType type, BuildContext context}) {  // {}で括ると名前付き引数になる
     switch (type) {
-      case 'topMenuBtn':
-      case 'fileMenuBtn':
+      case EBtnType.topMenuBtn:
+      case EBtnType.fileMenuBtn:
         return MediaQuery.of(context).size.width * 0.9;
-      case 'settingMenuBtn':
+      case EBtnType.settingMenuBtn:
         return MediaQuery.of(context).size.width * 0.25;
     }
     throw AssertionError('Unexpected type: $this');
   }
 
   // ボタンの文字の大きさを決めるメソッド
-  double decideFontSize({String type}) {  // {}で括ると名前付き引数になる
+  double decideFontSize({EBtnType type}) {  // {}で括ると名前付き引数になる
     switch (type) {
-      case 'topMenuBtn':
+      case EBtnType.topMenuBtn:
         return 26;
-      case 'fileMenuBtn':
-      case 'settingMenuBtn':
+      case EBtnType.fileMenuBtn:
+      case EBtnType.settingMenuBtn:
         return 20;
     }
     throw AssertionError('Unexpected type: $this');
   }
 
   // ボタンの文字の太さを決めるメソッド
-  FontWeight decideFontWeight({String type}) {  // {}で括ると名前付き引数になる
+  FontWeight decideFontWeight({EBtnType type}) {  // {}で括ると名前付き引数になる
     switch (type) {
-      case 'topMenuBtn':
-      case 'fileMenuBtn':
-      case 'settingMenuBtn':
+      case EBtnType.topMenuBtn:
+      case EBtnType.fileMenuBtn:
+      case EBtnType.settingMenuBtn:
         return FontWeight.w600;
     }
     throw AssertionError('Unexpected type: $this');
