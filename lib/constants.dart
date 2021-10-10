@@ -28,6 +28,8 @@ enum DialogType {
   detail,
   delete,
 }
+
+List<String> warningTexts = ['BTスキャナーが', '接続されて', 'ませんよー'];
 // その他で使用する定数 ここまで -------------------------
 
 
