@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercrashcourse/constants.dart';
+import 'package:fluttercrashcourse/utils.dart';
 import 'package:fluttercrashcourse/widgets/buttons/t_btn.dart';
 
 class RecordDialog extends StatelessWidget {
@@ -30,8 +31,15 @@ class RecordDialog extends StatelessWidget {
       ),
       actions: [
         if (type == DialogType.delete) TBtn(label: 'キャンセル', onPressd: () => Navigator.pop(context)),
-        // ダイアログの種類によってメソッドの内容を変える
-        TBtn(label: 'OK', onPressd: () => Navigator.pop(context)),
+        TBtn(
+          label: 'OK',
+          onPressd: () {
+            return
+              (type == DialogType.detail)
+              ? Utils.goBack(context)
+              : print('削除しました');
+          },
+        ),
       ],
     );
   }
