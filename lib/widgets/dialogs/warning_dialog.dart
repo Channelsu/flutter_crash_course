@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluttercrashcourse/constants.dart';
 import 'package:fluttercrashcourse/utils.dart';
 import 'package:fluttercrashcourse/widgets/buttons/t_btn.dart';
 
