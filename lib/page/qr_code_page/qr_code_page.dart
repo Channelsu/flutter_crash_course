@@ -12,6 +12,12 @@ class _QRCodePageState extends State<QRCodePage> {
   QRViewController controller;
 
   @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
