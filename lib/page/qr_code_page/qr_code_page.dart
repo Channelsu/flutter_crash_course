@@ -32,6 +32,8 @@ class _QRCodePageState extends State<QRCodePage> {
   );
 
   void onQRViewCreated(QRViewController controller) {
-
+    setState(() {
+      this.controller = controller; 
+    });
   }
 }
