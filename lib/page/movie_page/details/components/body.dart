@@ -112,7 +112,12 @@ class CastCard extends StatelessWidget {
             maxLines: 2,
           ),
           SizedBox(height: kDefaultPadding / 4,),
-          
+          Text(
+            cast['movieName'],
+            maxLines: 1,
+            textAlign: TextAlign.center,
+            style: TextStyle(color: kTextLightColor),
+          ),
         ],
       ),
     );
