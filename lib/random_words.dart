@@ -179,17 +179,17 @@ class _RandomWordsState extends State<RandomWords> {
                 );
               },
             ),
-            ListTile(
-              title: Text('QRコード'),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => QRCodePage(),
-                  )
-                );
-              },
-            ),
+            // ListTile(
+            //   title: Text('QRコード'),
+            //   onTap: () {
+            //     Navigator.push(
+            //       context,
+            //       MaterialPageRoute(
+            //         builder: (context) => QRCodePage(),
+            //       )
+            //     );
+            //   },
+            // ),
             ListTile(
               title: Text('映画アプリ'),
               onTap: () {
