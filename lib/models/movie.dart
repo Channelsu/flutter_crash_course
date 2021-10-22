@@ -39,22 +39,22 @@ List<Movie> movies = [
     cast: [
       {
         "originalName": "田中太郎",
-        "movieName": "Director",
+        "movieName": "トーマス",
         "image": "assets/images/actor_1.png",
       },
       {
         "originalName": "山田次郎",
-        "movieName": "Carroll",
+        "movieName": "キャロル",
         "image": "assets/images/actor_2.png",
       },
       {
         "originalName": "渡辺花子",
-        "movieName": "Ken Miles",
+        "movieName": "ハナコ",
         "image": "assets/images/actor_3.png",
       },
       {
         "originalName": "足立雪子",
-        "movieName": "Mollie",
+        "movieName": "モーリス",
         "image": "assets/images/actor_4.png",
       },
     ],
@@ -74,22 +74,22 @@ List<Movie> movies = [
     cast: [
       {
         "originalName": "田中太郎",
-        "movieName": "Director",
+        "movieName": "トーマス",
         "image": "assets/images/actor_1.png",
       },
       {
         "originalName": "山田次郎",
-        "movieName": "Carroll",
+        "movieName": "キャロル",
         "image": "assets/images/actor_2.png",
       },
       {
         "originalName": "渡辺花子",
-        "movieName": "Ken Miles",
+        "movieName": "ハナコ",
         "image": "assets/images/actor_3.png",
       },
       {
         "originalName": "足立雪子",
-        "movieName": "Mollie",
+        "movieName": "モーリス",
         "image": "assets/images/actor_4.png",
       },
     ],
@@ -109,22 +109,22 @@ List<Movie> movies = [
     cast: [
       {
         "originalName": "田中太郎",
-        "movieName": "Director",
+        "movieName": "トーマス",
         "image": "assets/images/actor_1.png",
       },
       {
         "originalName": "山田次郎",
-        "movieName": "Carroll",
+        "movieName": "キャロル",
         "image": "assets/images/actor_2.png",
       },
       {
         "originalName": "渡辺花子",
-        "movieName": "Ken Miles",
+        "movieName": "ハナコ",
         "image": "assets/images/actor_3.png",
       },
       {
         "originalName": "足立雪子",
-        "movieName": "Mollie",
+        "movieName": "モーリス",
         "image": "assets/images/actor_4.png",
       },
     ],
