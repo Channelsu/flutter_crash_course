@@ -66,7 +66,7 @@ class CastAndCrew extends StatelessWidget {
             '出演者',
             style: Theme.of(context).textTheme.headline5,
           ),
-          SizedBox(height: kDefaultPadding / 2),
+          SizedBox(height: kDefaultPadding),
           SizedBox(
             height: 160,
             child: ListView.builder(
